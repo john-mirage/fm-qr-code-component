@@ -1,0 +1,42 @@
+@import url(./styles/reset.css);
+@import url(./styles/components/page.css);
+@import url(./styles/components/card.css);
+@import url(./styles/components/sr-only.css);
+
+:root {
+  --color-grey-50: hsl(0, 0%, 100%);
+  --color-grey-100: hsl(212, 45%, 89%);
+  --color-grey-300: hsl(220, 15%, 70%);
+  --color-grey-600: hsl(220, 15%, 55%);
+  --color-grey-700: hsl(218, 44%, 24%);
+  --color-grey-800: hsl(218, 44%, 22%);
+  --color-grey-900: hsl(218, 44%, 18%);
+
+  --color-background-light: var(--color-grey-100);
+  --color-surface-light: var(--color-grey-50);
+  --color-on-surface-light: var(--color-grey-800);
+  --color-on-surface-variant-light: var(--color-grey-600);
+
+  --color-background-dark: var(--color-grey-900);
+  --color-surface-dark: var(--color-grey-700);
+  --color-on-surface-dark: var(--color-grey-50);
+  --color-on-surface-variant-dark: var(--color-grey-300);
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--color-background-light);
+    --color-surface: var(--color-surface-light);
+    --color-on-surface: var(--color-on-surface-light);
+    --color-on-surface-variant: var(--color-on-surface-variant-light);
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-background-dark);
+    --color-surface: var(--color-surface-dark);
+    --color-on-surface: var(--color-on-surface-dark);
+    --color-on-surface-variant: var(--color-on-surface-variant-dark);
+  }
+}
